@@ -8,7 +8,7 @@ subtitle: The greatest people on earth
   <h2>Notice</h2>
   <ul>
   {% for post in site.categories.notice %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{ post.url }}">{{site.baseurl}}{{ post.title }}</a></li>
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
   </ul>
 </div>
