@@ -1,0 +1,11 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript">
+$('li').each(function(){
+    if(window.location.href.indexOf($(this).find('a:first').attr('href'))>-1)
+    {
+    $(this).addClass('pure-menu-selected');
+    }
+});
+
+</script>
+<script src="{{site.baseurl}}/js/ui.js"></script>
