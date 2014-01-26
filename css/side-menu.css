@@ -147,9 +147,10 @@ appears on the left side of the page.
     */
     #menu .pure-menu-selected {
         font-size:112%;
+        background: #1f8dd6;
     }
     #menu .pure-menu-heading {
-        background: #1f8dd6;
+        
     }
         /*
         This styles a link within a selected menu item `<li>`.
@@ -169,9 +170,15 @@ appears on the left side of the page.
     This styles the menu heading.
     */
     #menu .pure-menu-heading {
-        font-size: 110%;
+        font-size: 125%;
+        font-weight:300;
         color: #fff;
         margin: 0;
+    }
+    
+    #menu .pure-menu-heading:hover,
+    #menu .pure-menu-heading:focus{
+    	color:rgb(153, 153, 153);
     }
 
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
