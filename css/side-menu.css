@@ -48,6 +48,21 @@ The content `<div>` is where all your content goes.
     max-width: 800px;
     margin-bottom: 50px;
     line-height: 1.6em;
+    
+    /* uncomment to make this interesting */
+    /* 
+	margin: 0 auto;
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: 20px;
+	color: #343434;
+	background: #ebddba;
+	background: -webkit-linear-gradient(#ebddba, #f9f1dd, #ebddba);
+	background: -moz-linear-gradient(#ebddba, #f9f1dd, #ebddba);
+	background: -o-linear-gradient(#ebddba, #f9f1dd, #ebddba);
+	background: -ms-linear-gradient(#ebddba, #f9f1dd, #ebddba);
+	background: linear-gradient(#ebddba, #f9f1dd, #ebddba);
+	overflow-x: hidden;
+	*/
 }
 
 .header {
@@ -142,6 +157,13 @@ appears on the left side of the page.
         #menu .pure-menu-selected a {
             color: #fff;
         }
+     
+    /* this styles a menu item <li> */
+    #menu #activitiesTitle{
+    	padding: 0.6em 0 0.6em 0.6em;
+    	line-height:1.5em;
+    	display:block;
+    }
 
     /*
     This styles the menu heading.

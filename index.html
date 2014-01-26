@@ -3,11 +3,12 @@ layout: default
 title: Student Council - MMC&RI
 subtitle: The greatest people on earth
 ---
+<div id="announcement">We wish everyone a happy republic day!</div>
 
 <div id="home">
   <h2>Notice</h2>
   <ul>
-  {% for post in site.categories.notice %}
+  {% for post in site.categories.notice limit: 5 %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
   </ul>
