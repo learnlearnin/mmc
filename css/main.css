@@ -99,6 +99,10 @@ dt{
     position: relative;
 }
  
+.tcycle img{
+    max-width:100%;
+} 
+
 /*replace the content value with the
 corresponding value from the list below*/
  
