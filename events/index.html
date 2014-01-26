@@ -1,0 +1,22 @@
+---
+layout: page
+title: Events
+---
+<div id="noticeboard">
+  <h2>Upcoming events</h2>
+    
+  {% for event in site.categories.events reversed %}
+   {% if event.date >= site.time %}
+    <li><span>{{ event.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{ event.url }}">{{ event.title | capitalize }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </div>
+  
+<div id="noticeboard">
+  <h2>Past events</h2>
+  {% for event in site.categories.events %}
+  {% if event.date < site.time %}
+    <li><span>{{ event.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{ event.url }}">{{ event.title | capitalize }}</a></li>
+   {% endif %}
+  {% endfor %}
+  </div>
