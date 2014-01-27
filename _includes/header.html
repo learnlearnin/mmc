@@ -6,7 +6,7 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
         
-        <link rel="canonical" href="http://learnlearn.in{{ site.baseurl }}{{ page.url }}">
+        <link rel="canonical" href="http://learnlearn.in{{ site.baseurl }}{{ page.url | remove: 'index.html' }}">
         <script type="text/javascript">        
         if (window.location.href.indexOf('http://learlearnin.github.io') === 0) {
             window.location.href = 'http://learnlearn.in{{ site.baseurl }}{{ page.url }}';
